@@ -1,16 +1,16 @@
 //
-// VideoCoreTest.Build.cs
+// VideoCoreNDI.Build.cs
 //
-//  Generated on June 24 2020
+//  Generated on Dec 2 2020
 //  Template created by Peter Gusev on 27 January 2020.
 //  Copyright 2013-2019 Regents of the University of California
 //
 
 using UnrealBuildTool;
 
-public class VideoCoreTest : ModuleRules
+public class VideoCoreNDI : ModuleRules
 {
-	public VideoCoreTest(ReadOnlyTargetRules Target) : base(Target)
+	public VideoCoreNDI(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 
@@ -35,7 +35,8 @@ public class VideoCoreTest : ModuleRules
 				"UMG",
 				"VideoCore",
 				"DDBase",
-				"DDLog"
+				"DDLog",
+				"NDIIO"
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -47,7 +48,9 @@ public class VideoCoreTest : ModuleRules
 				"CoreUObject",
 				"Engine",
 				"Slate",
-				"SlateCore"
+				"SlateCore",
+				"Media",
+				"MediaAssets"
 				// ... add private dependencies that you statically link with here ...
 			}
 			);
